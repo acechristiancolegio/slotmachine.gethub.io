@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="slot.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slot-machine">
+            <div class="slot-row">
+                <div class="slot" id="slot1"><img src="1.jfif" alt="Image 1"></div>
+                <div class="slot" id="slot2"><img src="20.jpg" alt="Image 20"></div>
+                <div class="slot" id="slot3"><img src="10.jpg" alt="Image 10"></div>
+            </div>
+            <div class="slot-row">
+                <div class="slot" id="slot4"><img src="10.jpg" alt="Image 10"></div>
+                <div class="slot" id="slot5"><img src="1.jfif" alt="Image 1"></div>
+                <div class="slot" id="slot6"><img src="20.jpg" alt="Image 20"></div>
+            </div>
+            <div class="slot-row">
+                <div class="slot" id="slot7"><img src="20.jpg" alt="Image 20"></div>
+                <div class="slot" id="slot8"><img src="10.jpg" alt="Image 10"></div>
+                <div class="slot" id="slot9"><img src="1.jfif" alt="Image 1"></div>
+            </div>
+            
+            
+            <div class="buttons">
+                <button class="spin-button" onclick="spin()">Spin</button>
+                <button class="auto-spin-button" onclick="toggleAutoSpin()">Start Auto Spin</button>
+                <button class="bet-button" onclick="placeBet()">Place Bet</button>
+            </div>
+            <div class="dashboard">
+                <p>Bet Amount: <span id="bet-amount">$0</span></p>
+                <p>Balance: <span id="balance">$1000</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="slot.js"></script>
+</body>
+</html>
